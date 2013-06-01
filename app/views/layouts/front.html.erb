@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ResearchLogger</title>
+  <%= stylesheet_link_tag    "front", :media => "all" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+    <div id="wrapper">
+        <div id="header">
+            <h1>Research Logger</h1>
+
+            <% if user_signed_in? %>
+            Hello!
+             <a href="/logout">Logout</a>
+            <% else %>
+            <a href="/login">Login</a>
+            <% end %>
+        </div>
+        <div id="content">
+            <%= yield %>
+        </div>
+    </div>
+</body>
+</html>

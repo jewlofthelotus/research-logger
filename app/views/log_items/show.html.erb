@@ -1,0 +1,45 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Search terms:</b>
+  <%= @log_item.search_terms %>
+</p>
+
+<p>
+  <b>Source:</b>
+  <%= @log_item.source %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @log_item.location %>
+</p>
+
+<p>
+  <b>Url:</b>
+  <%= @log_item.url %>
+</p>
+
+<p>
+  <b>Source number:</b>
+  <%= @log_item.source_number %>
+</p>
+
+<p>
+  <b>Objective:</b>
+  <%= @log_item.objective %>
+</p>
+
+<p>
+  <b>Results:</b>
+  <%= @log_item.results %>
+</p>
+
+<p>
+  <b>Success:</b>
+  <%= @log_item.success %>
+</p>
+
+
+<%= link_to 'Edit', edit_log_item_path(@log_item) %> |
+<%= link_to 'Back', log_items_path %>

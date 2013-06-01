@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  search_terms: MyText
+  source: MyText
+  location: MyText
+  url: MyString
+  source_number: MyString
+  objective: MyText
+  results: MyText
+  success: false
+
+two:
+  search_terms: MyText
+  source: MyText
+  location: MyText
+  url: MyString
+  source_number: MyString
+  objective: MyText
+  results: MyText
+  success: false

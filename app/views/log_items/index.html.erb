@@ -1,0 +1,37 @@
+<h1>Listing log_items</h1>
+
+<table>
+  <tr>
+    <th>Search terms</th>
+    <th>Source</th>
+    <th>Location</th>
+    <th>Url</th>
+    <th>Source number</th>
+    <th>Objective</th>
+    <th>Results</th>
+    <th>Success</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @log_items.each do |log_item| %>
+  <tr>
+    <td><%= log_item.search_terms %></td>
+    <td><%= log_item.source %></td>
+    <td><%= log_item.location %></td>
+    <td><%= log_item.url %></td>
+    <td><%= log_item.source_number %></td>
+    <td><%= log_item.objective %></td>
+    <td><%= log_item.results %></td>
+    <td><%= log_item.success %></td>
+    <td><%= link_to 'Show', log_item %></td>
+    <td><%= link_to 'Edit', edit_log_item_path(log_item) %></td>
+    <td><%= link_to 'Destroy', log_item, confirm: 'Are you sure?', method: :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Log item', new_log_item_path %>
